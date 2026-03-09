@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta VIP ElaPro - Acesso Vitalício</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons if needed, but I'll use SVGs for checkmarks -->
+</head>
+<body>
+    <div class="container">
+        <div class="checkout-card">
+            <!-- Logo area -->
+            <div class="header">
+                <div class="logo-container">
+                  <div class="logo-box">
+                    <span class="logo-e">E</span>
+                  </div>
+                  <h1 class="logo-text">ElaPro</h1>
+                </div>
+                
+                <div class="heart-icon pulse">💗</div>
+                
+                <h2 class="main-title">Obrigada por <span class="gradient-text">acreditar primeiro</span></h2>
+                
+                <p class="intro-text">
+                  Você foi uma das primeiras a confiar no <strong>ElaPro</strong>, antes de qualquer outra pessoa ver o que ele poderia se tornar. Isso significa muito pra mim.
+                </p>
+                <p class="intro-text">
+                  Durante o beta, cada feedback seu me ajudou a construir algo melhor. E agora, como forma de reconhecer isso, quero te oferecer uma condição que <strong>ninguém mais vai ter acesso.</strong>
+                </p>
+            </div>
+
+            <!-- Offer Box -->
+            <div class="offer-box">
+                <div class="badge">🔒 OFERTA EXCLUSIVA BETA</div>
+                <div class="price-container">
+                    <span class="currency">R$</span>
+                    <span class="price">22<small>,90</small></span>
+                </div>
+                <div class="price-footer">por mês · para sempre</div>
+                
+                <div class="guarantee-badge">
+                  <span class="lock">🔐</span> Preço garantido e vitalício
+                </div>
+                
+                <div class="public-price">Preço público a partir de amanhã: <s>R$ 29,90/mês</s></div>
+            </div>
+
+            <!-- Features List -->
+            <ul class="features-list">
+                <li>
+                    <span class="check">✓</span>
+                    <p><strong>Agenda inteligente ilimitada</strong> — Reagendamentos fáceis e múltiplos serviços</p>
+                </li>
+                <li>
+                    <span class="check">✓</span>
+                    <p><strong>Lembretes automáticos no WhatsApp</strong> — Reduza faltas e buracos na agenda</p>
+                </li>
+                <li>
+                    <span class="check">✓</span>
+                    <p><strong>Calculadora de lucro e ficha técnica</strong> — Saiba seu lucro real por serviço</p>
+                </li>
+                <li>
+                    <span class="check">✓</span>
+                    <p><strong>Financeiro descomplicado</strong> — Controle entradas, saídas e saldo líquido</p>
+                </li>
+                <li>
+                    <span class="check">✓</span>
+                    <p><strong>Gestão de clientes VIP</strong> — Histórico completo e alertas de ausência</p>
+                </li>
+                <li>
+                    <span class="check">✓</span>
+                    <p><strong>Link de agendamento online</strong> — Sua cliente marca sozinha, 24h por dia</p>
+                </li>
+            </ul>
+
+            <div class="divider"></div>
+
+            <!-- Checkout Form -->
+            <form id="checkout-form">
+                <h3 class="form-section-title">DADOS PARA CADASTRO</h3>
+                
+                <div class="input-group">
+                    <label>SEU NOME COMPLETO</label>
+                    <input type="text" id="nome" name="nome" placeholder="Como você quer ser identificada" required>
+                </div>
+
+                <div class="input-group">
+                    <label>E-MAIL</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label>CPF / CNPJ</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                    </div>
+                    <div class="input-group">
+                        <label>WHATSAPP</label>
+                        <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                    </div>
+                </div>
+
+                <div class="payment-tabs">
+                    <button type="button" class="tab-btn active" data-tab="cartao">💳 Cartão de crédito</button>
+                    <button type="button" class="tab-btn" data-tab="pix">💚 Pix</button>
+                </div>
+
+                <!-- Tab Content: Cartão -->
+                <div id="tab-cartao" class="tab-content active">
+                    <div class="input-group">
+                        <label>NÚMERO DO CARTÃO</label>
+                        <input type="text" id="numeroCartao" name="numeroCartao" placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <label>VALIDADE</label>
+                            <input type="text" id="validade" name="validade" placeholder="MM/AA">
+                        </div>
+                        <div class="input-group">
+                            <label>CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="000">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>NOME NO CARTÃO</label>
+                        <input type="text" id="nomeCartao" name="nomeCartao" placeholder="Exatamente como no cartão">
+                    </div>
+                </div>
+
+                <!-- Tab Content: Pix -->
+                <div id="tab-pix" class="tab-content">
+                    <div class="pix-notice">
+                        <span class="bulb">💡</span>
+                        <p>O Pix não é automático. Você pagará agora a primeira mensalidade. A partir do 2º mês, você receberá um novo QR Code por e-mail todo mês para renovar sua assinatura.</p>
+                    </div>
+                </div>
+
+                <!-- Result area for Pix -->
+                <div id="pix-result" class="pix-result" style="display: none;">
+                    <p class="pix-title">Aponte a câmera para o QR Code abaixo:</p>
+                    <div class="qr-code-box">
+                        <img id="qr-code-img" src="" alt="QR Code Pix">
+                    </div>
+                    <p class="pix-instructions">Ou copie o código abaixo:</p>
+                    <div class="copy-paste-container">
+                        <input type="text" id="pix-code" readonly>
+                        <button type="button" id="copy-pix-btn">Copiar</button>
+                    </div>
+                    <p class="pix-expires">Expira em: <span id="pix-countdown">15:00</span></p>
+                </div>
+
+                <button type="submit" id="submit-btn" class="main-button">
+                    <span class="btn-text">💗 Quero garantir meu desconto vitalício</span>
+                    <div class="spinner"></div>
+                </button>
+
+                <div class="security-foot">
+                    <span>🔒 Seguro</span>
+                    <span>✅ Cancele quando quiser</span>
+                    <span>💬 Suporte direto</span>
+                </div>
+            </form>
+
+            <div id="success-message" class="success-message" style="display: none;">
+                <div class="success-icon">🎉</div>
+                <h3>Seja bem-vinda, VIP!</h3>
+                <p>Seu pagamento foi processado com sucesso. Verifique seu e-mail para acessar o ElaPro.</p>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="author-box">
+                    <img src="https://ui-avatars.com/api/?name=Nathalya+Le%C3%A3o&background=E91E8C&color=fff" alt="Nathalya Leão" class="avatar">
+                    <div class="author-info">
+                        <p class="author-name">Nathalya Leão</p>
+                        <p class="author-role">Criadora do ElaPro · com muito carinho ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
