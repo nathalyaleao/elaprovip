@@ -1,92 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oferta VIP ElaPro - Acesso Vitalício</title>
-    <!-- Google Fonts -->
+    <title>ElaPro - Oferta Exclusiva Beta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+    <link rel="icon" type="image/png" href="icon_novo.png">
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for icons if needed, but I'll use SVGs for checkmarks -->
 </head>
 
 <body>
-    <div class="container">
-        <div class="checkout-card">
-            <!-- Logo area -->
-            <div class="header">
-                <div class="logo-container">
-                    <div class="logo-box">
-                        <span class="logo-e">E</span>
-                    </div>
-                    <h1 class="logo-text">ElaPro</h1>
+    <div class="background-animation"></div>
+
+    <main class="container">
+        <div class="sales-card">
+            <!-- Header section -->
+            <header class="card-header">
+                <div class="icon-wrapper">
+                    <img src="icon_novo.png" alt="Icon" class="brand-icon">
+                </div>
+                <div class="logo"><img src="logo_novo.png" alt="ElaPro Logo" class="brand-logo"></div>
+                <h1 class="main-title">
+                    Obrigada por <span class="text-pink">acreditar</span> <span class="text-purple">primeiro</span>
+                </h1>
+                <div class="thank-you-text">
+                    <p>Você foi uma das primeiras a confiar no <strong>ElaPro</strong>, antes de qualquer outra pessoa
+                        ver o que ele poderia se tornar. Isso significa muito pra mim.</p>
+                    <p>Durante o beta, cada feedback seu me ajudou a construir algo melhor. E agora, como forma de
+                        reconhecer isso, quero te oferecer uma condição que <strong>ninguém mais vai ter
+                            acesso.</strong></p>
+                </div>
+            </header>
+
+            <!-- Offer section -->
+            <section class="offer-box">
+                <div class="exclusive-badge">
+                    <span class="lock-icon">🔒</span> OFERTA EXCLUSIVA BETA
                 </div>
 
-                <div class="heart-icon pulse">💗</div>
-
-                <h2 class="main-title">
-                    Obrigada por <br>
-                    <span class="gradient-text">acreditar primeiro</span>
-                </h2>
-
-                <p class="intro-text">
-                    Você foi uma das primeiras a confiar no <strong>ElaPro</strong>, antes de qualquer outra pessoa ver
-                    o que ele poderia se tornar. Isso significa muito pra mim.
-                </p>
-                <p class="intro-text">
-                    Durante o beta, cada feedback seu me ajudou a construir algo melhor. E agora, como forma de
-                    reconhecer isso, quero te oferecer uma condição que <strong>ninguém mais vai ter acesso.</strong>
-                </p>
-            </div>
-
-            <!-- Offer Box -->
-            <div class="offer-box">
-                <div class="badge">🔒 OFERTA EXCLUSIVA BETA</div>
-                <div class="price-container">
+                <div class="pricing">
                     <span class="currency">R$</span>
-                    <span class="price">22<small>,90</small></span>
+                    <span class="amount">22</span>
+                    <span class="decimal">,90</span>
                 </div>
-                <div class="price-footer">por mês · para sempre</div>
+                <p class="price-subtitle">por mês · para sempre</p>
 
                 <div class="guarantee-badge">
-                    <span class="lock">🔐</span> Preço garantido e vitalício
+                    <span class="shield-icon">🔐</span> Preço garantido e vitalício
                 </div>
 
-                <div class="public-price">Preço público a partir de amanhã: <s>R$ 29,90/mês</s></div>
-            </div>
+                <p class="urgency-warning">
+                    Preço público a partir de amanhã: <span class="old-price">R$ 29,90/mês</span>
+                </p>
+            </section>
 
-            <!-- Features List -->
-            <ul class="features-list">
-                <li>
-                    <span class="check">✓</span>
-                    <p><strong>Agenda inteligente ilimitada</strong> — Reagendamentos fáceis e múltiplos serviços</p>
-                </li>
-                <li>
-                    <span class="check">✓</span>
-                    <p><strong>Lembretes automáticos no WhatsApp</strong> — Reduza faltas e buracos na agenda</p>
-                </li>
-                <li>
-                    <span class="check">✓</span>
-                    <p><strong>Calculadora de lucro e ficha técnica</strong> — Saiba seu lucro real por serviço</p>
-                </li>
-                <li>
-                    <span class="check">✓</span>
-                    <p><strong>Financeiro descomplicado</strong> — Controle entradas, saídas e saldo líquido</p>
-                </li>
-                <li>
-                    <span class="check">✓</span>
-                    <p><strong>Gestão de clientes VIP</strong> — Histórico completo e alertas de ausência</p>
-                </li>
-                <li>
-                    <span class="check">✓</span>
-                    <p><strong>Link de agendamento online</strong> — Sua cliente marca sozinha, 24h por dia</p>
-                </li>
-            </ul>
+            <!-- Features checklist -->
+            <section class="features-list">
+                <div class="feature-item">
+                    <span class="check-icon">✓</span>
+                    <p>Agenda inteligente ilimitada</p>
+                </div>
+                <div class="feature-item">
+                    <span class="check-icon">✓</span>
+                    <p>Lembretes automáticos no WhatsApp</p>
+                </div>
+                <div class="feature-item">
+                    <span class="check-icon">✓</span>
+                    <p>Calculadora de lucro e ficha técnica</p>
+                </div>
+                <div class="feature-item">
+                    <span class="check-icon">✓</span>
+                    <p>Financeiro descomplicado</p>
+                </div>
+                <div class="feature-item">
+                    <span class="check-icon">✓</span>
+                    <p>Relatórios completos e detalhados</p>
+                </div>
+                <div class="feature-item">
+                    <span class="check-icon">✓</span>
+                    <p>Link de agendamento online</p>
+                </div>
+            </section>
 
             <div class="divider"></div>
 
@@ -183,19 +182,20 @@
                 <p>Seu pagamento foi processado com sucesso. Verifique seu e-mail para acessar o ElaPro.</p>
             </div>
 
-            <!-- Footer -->
-            <div class="footer">
-                <div class="author-box">
-                    <img src="https://ui-avatars.com/api/?name=Nathalya+Le%C3%A3o&background=E91E8C&color=fff"
-                        alt="Nathalya Leão" class="avatar">
-                    <div class="author-info">
-                        <p class="author-name">Nathalya Leão</p>
-                        <p class="author-role">Criadora do ElaPro · com muito carinho ❤️</p>
+            <!-- Footer signature -->
+            <footer class="card-footer">
+                <div class="profile-info">
+                    <div class="profile-pic">
+                        <img src="perfil.jpg" alt="Nathalya Leão">
+                    </div>
+                    <div class="profile-text">
+                        <h3>Nathalya Leão</h3>
+                        <p>Criadora do ElaPro · com muito carinho ❤️</p>
                     </div>
                 </div>
-            </div>
+            </footer>
         </div>
-    </div>
+    </main>
 
     <script src="checkout.js"></script>
 </body>
