@@ -14,7 +14,7 @@ app.use(helmet({
 }));
 
 app.use(cors({
-  origin: process.env.ASAAS_ENV === 'sandbox' ? '*' : 'https://yourdomain.com'
+  origin: process.env.ASAAS_ENV === 'sandbox' ? '*' : 'https://elaprovip.vercel.app'
 }));
 
 app.use(bodyParser.json());

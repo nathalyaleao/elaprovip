@@ -55,7 +55,7 @@ router.post('/checkout/cartao', async (req, res) => {
             value: 22.90,
             nextDueDate: new Date().toISOString().split('T')[0],
             cycle: 'MONTHLY',
-            description: 'ElaPro VIP Vitalício',
+            description: 'ElaPro VIP',
             creditCard: {
                 holderName: nomeCartao,
                 number: numeroCartao.replace(/\D/g, ''),
@@ -69,7 +69,8 @@ router.post('/checkout/cartao', async (req, res) => {
                 cpfCnpj: cpf.replace(/\D/g, ''),
                 postalCode: '01001000', // Default or asked if needed
                 addressNumber: '1',
-                mobilePhone: telefone.replace(/\D/g, '')
+                mobilePhone: telefone.replace(/\D/g, ''),
+                remoteIp: req.ip
             }
         });
 
