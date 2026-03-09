@@ -33,3 +33,5 @@ app.listen(PORT, () => {
   console.log(`🚀 ElaPro Checkout running at http://localhost:${PORT}`);
   console.log(`Environment: ${process.env.ASAAS_ENV}`);
 });
+
+module.exports = app;
