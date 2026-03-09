@@ -108,7 +108,7 @@ router.post('/checkout/pix', async (req, res) => {
             value: 22.90,
             nextDueDate: new Date().toISOString().split('T')[0],
             cycle: 'MONTHLY',
-            description: 'ElaPro VIP Vitalício'
+            description: 'ElaPro VIP'
         });
 
         const subscriptionId = subscriptionResponse.data.id;
