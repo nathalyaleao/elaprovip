@@ -81,26 +81,28 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const startBackgroundConfetti = () => {
-        const duration = 15 * 60 * 1000; // Run for a long time
-        const animationEnd = Date.now() + duration;
-        const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: -1, colors: [pinkColor, '#FFD1E6'] };
+        const defaults = {
+            startVelocity: 0,
+            spread: 360,
+            ticks: 200,
+            zIndex: -1,
+            colors: [pinkColor, '#FFD1E6', '#FFECF5'],
+            gravity: 0.5,
+            scalar: 0.7,
+            drift: 0
+        };
 
         function randomInRange(min, max) {
             return Math.random() * (max - min) + min;
         }
 
-        const interval = setInterval(function () {
-            const timeLeft = animationEnd - Date.now();
-
-            if (timeLeft <= 0) {
-                return clearInterval(interval);
-            }
-
-            const particleCount = 10 * (timeLeft / duration);
-            // since particles fall down, start them at the top
-            confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } });
-            confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
-        }, 3000);
+        setInterval(function () {
+            confetti({
+                ...defaults,
+                particleCount: 1,
+                origin: { x: Math.random(), y: -0.1 }
+            });
+        }, 200); // Fast interval for "rain" effect
     };
 
     // Initial confetti
